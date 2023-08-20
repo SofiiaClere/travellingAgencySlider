@@ -1,195 +1,219 @@
-/******************************************************************************
-START Glitch hello-app default styles
+.one{
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    }
 
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
-:root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+.two{
+    background-image: url("https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
+.three{
+    background-image: url("https://images.unsplash.com/photo-1552598715-7eeb9232a2ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+.four{
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80");
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
+.five{
+    background-image: url("https://images.unsplash.com/photo-1433838552652-f9a46b332c40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
 }
 
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
+.six{
+    background-image: url("https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
+body{
+    background-color: #faf1e6;
 }
 
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
+.container{
+    display: flex;
 }
 
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
-body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+.header{
+    display: flex;
+    justify-content: center;
 }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
+h1, h3{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
+.item{
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin: 3px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+} 
+
+h4{
+    font-size: 0px;
+    position:absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #faf1e6d8;
+    color: black;
 }
 
-/* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
+.paragraph{
+    position: absolute;
+    font-size: 0px;
+    text-align: center;
+    top: 380px;
+    left: 5px;
+    background-color: #faf1e6c9;
+    color: black;
 }
 
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
+.price{
+    position: absolute;
+    font-size: 0px;
+    top: 580px;
+    left: 25px;
+    background-color: #faf1e6ee;
+    color: black;
+    font-weight: bold;
+    font-family: 'Playfair Display';
 }
 
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
+.selected{
+    flex: 4;
 }
 
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
+.selected h1{
+    font-size: 60px;
 }
 
-/* Subheading */
-h2 {
-  color: #2800FF;
+.selected h4{
+    font-size: 40px;
+    transition: all 1s ease-in;
 }
 
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
+.selected .paragraph{
+    font-size: 30px;
+    transition: all 1s ease-in;
 }
 
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
+.selected .price{
+    font-size: 30px;
+    transition: all 1s ease-in;
 }
 
-/* Links that open files in the editor */
-.fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
-  color: var(--color-secondary);
+.afterword{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Playfair Display', serif;
+    font-size: 25px;
+    text-align: center
 }
-.fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
+
+label{
+    font-size: 30px;
+    margin: 5px; 
+}
+
+.text-input{
+    background-color: #faf1e6;
+    border-style: none;
+    padding: 12px 20px;
+    margin: 5px;
+} 
+
+.btn{
+    background-color: #00acb59e;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    flex: 1;
+
+}
+
+.btn:hover{
+    background-color: #00acb5f1;
+}
+
+
+@media all and (max-width:800px){
+    h1{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 0px;
+    }
+
+    .selected h1{
+        font-size: 25px;
+    }
+
+    .selected h4{
+        font-size: 20px;
+        transition: all 1s ease-in;
+    }
+
+    .paragraph{
+        top: 300px;
+    }
+
+    .selected .paragraph {
+        font-size: 20px;
+        transition: all 1s ease-in;
+    }
+
+    .price{
+        font-size: 0px;
+        top: 550px;
+        left: 15px;
+    }
+
+    .selected .price {
+        font-size: 20px;
+        transition: all 1s ease-in;
+    }
+    .afterword{
+        font-size: 20px;
+    }
+
+}
+
+@media all and (max-width:500px){
+    .item{
+        margin: 1px;
+    }
+
+    h4 {
+        font-size: 0px;
+    }
+
+    .selected h4{
+        font-size:15px;
+    }
+
+    .paragraph{
+        top: 300px;
+    }
+
+    .selected .paragraph{
+        font-size: 20px;
+    }
+
+    .price{
+        font-size: 0px;
+        top: 540px;
+        left: 10px;
+    }
+
+    .selected .price{
+        font-size: 23px;
+    }
+
+    .afterword{
+        font-size: 20px;
+    }
+
 }
